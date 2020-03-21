@@ -1,0 +1,44 @@
+{% extends 'bases/base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block navbar %}
+
+{% endblock %}
+
+{% block login %}
+
+    <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-md-4">
+
+            {% if not user.is_authenticated %}
+                <form method="POST">
+
+                    {% csrf_token %}
+
+                    <div class="row justify-content-center">
+                        <img class="" src="{% static 'bases/images/logos/socar-aqs/flame.png' %}" width="50" height="60" alt="socar alov" />
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <h4 class="h4">Sign in</h4>
+                    </div>
+
+                    {{ form|crispy }}
+
+                    <!-- Sign in button -->
+                    <div class="row justify-content-end m-0">
+                        <button class="btn btn-info m-0" type="submit">Login</button>
+                    </div>
+
+                </form>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

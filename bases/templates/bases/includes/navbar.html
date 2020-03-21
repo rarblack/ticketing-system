@@ -1,0 +1,53 @@
+{% load static %}
+
+<!--Navbar -->
+<nav class="navbar navbar-expand-lg" style="box-shadow: none!important; background-color: transparent; padding: 0!important;">
+    <a class="navbar-brand" href="">
+        <img src="{% if navbar.logo %}{{ navbar.logo.url }}{% else %}{% static 'bases/images/logos/socar-aqs/black-horizontal.png' %}{% endif %}" height="30" alt="socar-aqs logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto">
+
+            <!-- username-->
+            {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">{% if user.get_full_name %}
+                        {{ user.get_full_name }}
+                    {% else %}
+                        {{ user.email }}
+                    {% endif %}</a>
+                </li>
+            {% endif %}
+
+            <!-- adminpanel-->
+            {% if user.is_staff %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'admin:index' %}" style="display: block;">admin-panel</a>
+                </li>
+            {% endif %}
+
+            <!-- signin-->
+            {% if not user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">
+                        <i class="fas fa-sign-in-alt" style="font-size: 25px;"></i>
+                    </a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">
+                        <i class="fas fa-sign-out-alt" style="font-size: 25px;"></i>
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+<!--/.Navbar -->

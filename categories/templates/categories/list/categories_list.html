@@ -1,0 +1,56 @@
+{% extends 'bases/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+
+    Categories
+
+{% endblock %}
+
+
+{% block breadcrumb %}
+
+    <nav aria-label="breadcrumb">
+
+        <ol class="breadcrumb mb-0 px-0" style="background-color: transparent!important;">
+
+            <li class="breadcrumb-item active">categories</li>
+
+        </ol>
+
+    </nav>
+
+{% endblock %}
+
+
+{% block main %}
+
+    <div class="row mb-5 justify-content-center mx-0">
+
+        {% if categories %}
+
+            {% for category in categories %}
+
+                    <div class="col-md-3 col-sm-12 p-5 border rounded bg-white text-center">
+
+                        <a href="{% url 'elements:list-elements' category.name|lower %}">
+
+                            {{ category.name|capfirst }}
+
+                        </a>
+
+                    </div>
+
+            {% endfor %}
+
+        {% else %}
+
+            Add category there is none
+
+        {% endif %}
+
+    </div>
+
+{% endblock %}

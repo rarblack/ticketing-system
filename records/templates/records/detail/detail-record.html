@@ -1,0 +1,77 @@
+{% extends 'bases/base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Detail Ticket
+{% endblock %}
+
+{% block breadcrumb %}
+    <div class="row mb-1 mx-0 justify-content-end">
+        <a href="{% url 'records:list-records' %}" class="btn btn-outline-primary mx-0" style="box-shadow: none!important; background-color: transparent;">
+            View Records
+        </a>
+    </div>
+{% endblock %}
+
+{% block main %}
+
+
+    <div class="row bg-white">
+
+        <div class="col-12 p-5 rounded">
+
+            <div id="div_id_name" class="form-group">
+                <label for="id_name" class=" requiredField">
+                    Name
+                    <span class="asteriskField">*</span>
+                </label>
+                <div class="">
+                    <input type="text" name="name" value="{{ record.name }}"maxlength="150" class="textinput textInput form-control disabled" required id="id_name">
+                </div>
+            </div>
+            <div id="div_id_surname" class="form-group">
+                <label for="id_surname" class=" requiredField">
+                    Surname
+                    <span class="asteriskField">*</span>
+                </label>
+                <div class="">
+                    <input type="text" name="surname" value="{{ record.surname }}" maxlength="150" class="textinput textInput form-control disabled" required id="id_surname">
+                </div>
+            </div>
+            <div id="div_id_number" class="form-group">
+                <label for="id_number" class=" requiredField">
+                    Number
+                    <span class="asteriskField">*</span>
+                </label>
+                <div class="">
+                    <input type="text" name="number" value="{{ record.number }}" maxlength="150" class="textinput textInput form-control disabled" required id="id_number">
+                    <small id="hint_id_number" class="form-text text-muted">+994 xx xxx xx xx</small>
+                </div>
+            </div>
+            <div id="div_id_content" class="form-group"> <label for="id_content" class=" requiredField">
+                Content
+                <span class="asteriskField">*</span>
+            </label>
+                <div class="">
+                    <textarea name="content" cols="40" rows="10" class="textarea form-control disabled" required id="id_content">{{ record.content }}</textarea>
+                </div>
+            </div>
+            <div id="div_id_status" class="form-group">
+                <label for="id_status" class=" requiredField">
+                    Surname
+                    <span class="asteriskField">*</span>
+                </label>
+                <div class="">
+                    <input type="text" name="status" value="{{ record.get_status_display }}" maxlength="150" class="textinput textInput form-control disabled" required id="id_status">
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+{% endblock %}

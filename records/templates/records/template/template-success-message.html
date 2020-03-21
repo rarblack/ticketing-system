@@ -1,0 +1,25 @@
+{% extends 'bases/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Successfully Recorded
+{% endblock %}
+
+{% block breadcrumb %}
+    <div class="row mb-1 mx-0 justify-content-start">
+        <a href="{% url 'records:create-record' %}" class="btn btn-outline-primary mx-0" style="box-shadow: none!important; background-color: transparent;">
+            <i class="fas fa-plus" aria-hidden="true"></i>
+            add another record
+        </a>
+    </div>
+{% endblock %}
+
+
+{% block main %}
+    <div class="row justify-content-center p-5">
+
+        <h1> Successfully Recorded </h1>
+
+    </div>
+{% endblock %}

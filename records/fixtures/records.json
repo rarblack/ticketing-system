@@ -1,0 +1,372 @@
+[
+  {
+    "model": "records.Computer",
+    "pk": 1,
+    "fields": {
+      "name": "LPT00187",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "48-2C-6A-1E-59-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },
+  {
+    "model": "records.Computer",
+    "pk": 2,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },
+    {
+    "model": "records.Computer",
+    "pk": 3,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },
+    {
+    "model": "records.Computer",
+    "pk": 4,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },
+    {
+    "model": "records.Computer",
+    "pk": 5,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },
+    {
+    "model": "records.Computer",
+    "pk": 6,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },
+    {
+    "model": "records.Computer",
+    "pk": 7,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },
+    {
+    "model": "records.Computer",
+    "pk": 8,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },
+    {
+    "model": "records.Computer",
+    "pk": 9,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },
+    {
+    "model": "records.Computer",
+    "pk": 10,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },  {
+    "model": "records.Computer",
+    "pk": 11,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },  {
+    "model": "records.Computer",
+    "pk": 12,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },  {
+    "model": "records.Computer",
+    "pk": 13,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },  {
+    "model": "records.Computer",
+    "pk": 14,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },  {
+    "model": "records.Computer",
+    "pk": 15,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },  {
+    "model": "records.Computer",
+    "pk": 16,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },  {
+    "model": "records.Computer",
+    "pk": 17,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },  {
+    "model": "records.Computer",
+    "pk": 18,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },  {
+    "model": "records.Computer",
+    "pk": 19,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  },  {
+    "model": "records.Computer",
+    "pk": 20,
+    "fields": {
+      "name": "LPT00127",
+      "type": "notebook",
+      "brand": "dell",
+      "model": "latitude e5490",
+      "serial": "4CE0460D0G",
+      "mac": "F8-2C-6A-1E-32-3D",
+      "user": 1,
+      "status": 1,
+      "group": 1,
+      "created_by": 1,
+      "updated_by": null,
+      "updated_at": null,
+      "created_at": "2020-01-01 12:12"
+    }
+  }
+]

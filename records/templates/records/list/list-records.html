@@ -1,0 +1,93 @@
+{% extends 'bases/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Records
+{% endblock %}
+
+{% block breadcrumb %}
+    {#    <nav aria-label="breadcrumb">#}
+    {#        <ol class="breadcrumb mb-0 px-0" style="background-color: transparent!important;">#}
+    {#            <li class="breadcrumb-item"><a href="{% url "categories:list-categories" %}">categories</a></li>#}
+    {#            <li class="breadcrumb-item"><a href="{% url "elements:list-elements" records.0.group.element.name %}">elements</a></li>#}
+    {#            <li class="breadcrumb-item"><a href="{% url "groups:list-groups" records.0.group.element.category.name records.0.group.element.name %}">groups</a></li>#}
+    {#            <li class="breadcrumb-item active">records</li>#}
+    {#        </ol>#}
+    {#    </nav>#}
+{% endblock %}
+
+
+{% block main %}
+    {% if records %}
+        {#        <div class="row mb-1 mx-0 justify-content-end">#}
+        {#            <a href="{% url 'records:create-computer' records.0.group.element.category.name|lower records.0.group.element.name|lower records.0.group.name|lower %}" class="btn btn-outline-primary" style="box-shadow: none!important; background-color: transparent;">#}
+        {#                <i class="fas fa-plus" aria-hidden="true"></i>#}
+        {#                add new record#}
+        {#            </a>#}
+        {#        </div>#}
+
+        <div class="row mb-5 mx-0">
+
+            <div class="col p-2 border rounded bg-white">
+
+
+                <table id="table" class="display table-bordered compact w-100 mx-0 animated fadeIn delay-1s">
+                    <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>surname</th>
+                        <th>number</th>
+                        <th>location</th>
+                        <th>category</th>
+                        <th>status</th>
+                        <th>when</th>
+                        <th>action</th>
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+                    {% for record in records %}
+                        <tr>
+                            <td class="dt-size">{{ record.name}}</td>
+                            <td class="dt-size">{{ record.surname}}</td>
+                            <td class="dt-size">{{ record.number}}</td>
+                            <td class="dt-size">{{ record.location.name}}</td>
+                            <td class="dt-size">{{ record.category.name}}</td>
+                            <td class="dt-size">{{ record.get_status_display}}</td>
+                            <td class="dt-size">{{ record.created_at|date:"D d M Y H:i" }}</td>
+                            <td class="dt-size text-center">
+                                <a href="{% url 'records:detail-record' record.pk %}"><i class="far fa-eye mr-2"></i></a>
+                            
+                                {% if not record.status == 'close' %}
+
+                                    {% if not record.status == 'accept' %}
+                                        <a href="{% url 'records:accept-record' record.pk %}"><i class="fas fa-plus mr-2"></i></a>
+                                    {% endif %}
+
+                                    {% if not record.status == 'reject' %}
+                                        <a href="{% url 'records:reject-record' record.pk %}"><i class="fas fa-times mr-2"></i></a>
+                                    {% endif %}
+
+                                    <a href="{% url 'records:close-record' record.pk %}"><i class="far fa-window-close"></i></a>
+
+                                {% else %}
+                                    ticket closed
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+    {% else %}
+        <div class="row p-5 justify-content-center">
+            {{ 'no records' |capfirst }}
+        </div>
+    {% endif %}
+{% endblock %}
