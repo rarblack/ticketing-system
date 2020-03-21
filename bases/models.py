@@ -50,13 +50,6 @@ class Navbar(models.Model):
         auto_now=True
     )
 
-    class Meta:
-        constraints = [
-            models.UniqueConstraint(
-                fields=['logo', 'department'],
-                name='navbar_logo_department_constraint'
-            )
-        ]
 
     def __str__(self):
         return "%s navbar" % self.type
@@ -107,13 +100,6 @@ class Footer(models.Model):
         auto_now=True
     )
 
-    class Meta:
-        constraints = [
-            models.UniqueConstraint(
-                fields=['department'],
-                name='footer_department_constraint'
-            )
-        ]
 
     def __str__(self):
         return "%s footer" % self.type

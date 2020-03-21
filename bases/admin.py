@@ -5,12 +5,12 @@ from .models import Navbar, Footer, Link
 
 @admin.register(Navbar)
 class NavbarAdmin(admin.ModelAdmin):
-    list_display = ['id', 'type', 'department']
+    list_display = ['id', 'type']
 
 
 @admin.register(Footer)
 class FooterAdmin(admin.ModelAdmin):
-    list_display = ['id', 'type', 'department']
+    list_display = ['id', 'type']
 
 
 @admin.register(Link)
