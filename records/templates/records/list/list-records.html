@@ -59,7 +59,7 @@
                             <td class="dt-size">{{ record.created_at|date:"D d M Y H:i" }}</td>
                             <td class="dt-size text-center">
                                 <a href="{% url 'records:detail-record' record.pk %}"><i class="far fa-eye mr-2"></i></a>
-                            
+
                                 {% if not record.status == 'close' %}
 
                                     {% if not record.status == 'accept' %}
@@ -73,7 +73,9 @@
                                     <a href="{% url 'records:close-record' record.pk %}"><i class="far fa-window-close"></i></a>
 
                                 {% else %}
+
                                     ticket closed
+
                                 {% endif %}
                             </td>
                         </tr>
