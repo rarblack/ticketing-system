@@ -4,7 +4,6 @@
     "pk": 1,
     "fields": {
       "logo": "fixtures/ict/images/logos/navbar/black-horizontal.png",
-      "department": 1,
       "type": "unauthorized",
       "updated_by": null,
       "updated_at": null,
@@ -17,7 +16,6 @@
     "pk": 2,
     "fields": {
       "logo": "fixtures/ict/images/logos/navbar/black-horizontal.png",
-      "department": 1,
       "type": "authorized",
       "updated_by": null,
       "updated_at": null,

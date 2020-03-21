@@ -15,14 +15,6 @@ class Navbar(models.Model):
 
     logo = models.ImageField(upload_to=path_to_logoes)
 
-    department = models.OneToOneField(
-        Department,
-        null=True,
-        on_delete=models.SET_NULL,
-        related_name='navbar',
-        related_query_name='navbar'
-    )
-
     type = models.CharField(
         max_length=200,
         default="unauthorized",
@@ -67,7 +59,7 @@ class Navbar(models.Model):
         ]
 
     def __str__(self):
-        return "%s's  navbar" % self.department.name
+        return "%s navbar" % self.type
 
 
 class Footer(models.Model):
@@ -77,14 +69,6 @@ class Footer(models.Model):
     )
 
     content = models.TextField()
-
-    department = models.OneToOneField(
-        Department,
-        null=True,
-        on_delete=models.SET_NULL,
-        related_name='footer',
-        related_query_name='footer'
-    )
 
     links = models.ManyToManyField('Link')
 
@@ -132,7 +116,7 @@ class Footer(models.Model):
         ]
 
     def __str__(self):
-        return "%s's footer" % self.department.name
+        return "%s footer" % self.type
 
 
 class Link(models.Model):
